@@ -14,9 +14,11 @@ function ErrorPage() {
                 <span className="header-title">Kindim</span>
 
                 {/* Icons after title */}
+                {/* <div className="header-icons">
                 <i className="fas fa-home"></i>
                 <i className="fas fa-globe"></i>
                 <i className="fas fa-user"></i>
+                </div> */}
 
                 {/* Login button */}
                 <button className="header-btn">Login</button>

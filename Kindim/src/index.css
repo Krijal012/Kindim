@@ -6,57 +6,56 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header styling */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+/* Add padding so content does NOT hide behind fixed header */
+body {
+    padding-top: 90px;
+    background-color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
 .header {
     display: flex;
     align-items: center;
     padding: 0 20px;
     height: 80px;
-    gap: 10px;
+    gap: 20px;
     background-color: #1A73E8;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-/* Logo animation + hover effect */
 .header-logo {
     height: 50px;
     width: 50px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    transition-duration: 1.25s;
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
 }
 
 .header-logo:hover {
     transform: scale(1.2);
     filter: hue-rotate(90deg) brightness(1.2);
-    box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.8),
-        0 0 40px rgba(26, 115, 232, 0.6);
+    box-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(26,115,232,0.6);
     border: 2px solid white;
 }
 
-/* Header title */
 .header-title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-left: 10px;
-    flex-grow: 1;
 }
 
-/* Header icons */
-.header i {
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.header i:hover {
-    color: #c2dfff;
-}
-
-/* Login button */
 .header-btn {
+    margin-left: auto;
     border: none;
     border-radius: 4px;
     background-color: #0F4EB3;
@@ -72,17 +71,20 @@
     color: #0F4EB3;
 }
 
-/* Middle section */
+/* ================= MIDDLE SECTION ================= */
+
 .middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .middle-content {
     flex: 1;
+    min-width: 260px;
 }
 
 .middle-num {
@@ -96,20 +98,19 @@
 }
 
 .middle-desc {
-    font-size: 30px;
+    font-size: 24px;
     margin: 10px 0;
 }
 
-/* Buttons in middle section */
-.middle-reload-btn,
+.middle-reload-btn, 
 .middle-home-btn {
     margin: 10px 0;
     padding: 15px;
     width: 200px;
     border: none;
-    transition: all 0.5s ease;
     font-size: 20px;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .middle-reload-btn:hover {
@@ -127,37 +128,35 @@
     color: #0F4EB3;
 }
 
-/* Right image */
 .right-img {
-    height: 300px;
-    width: 300px;
+    max-width: 350px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .right-img:hover {
     transform: scale(1.2);
     filter: hue-rotate(90deg) brightness(1.2);
-    box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.8),
-        0 0 40px rgba(26, 115, 232, 0.6);
+    box-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(26,115,232,0.6);
     border: 2px solid white;
 }
 
-/* Footer section */
+/* ================= FOOTER ================= */
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     color: white;
-    padding: 60px 40px;
+    padding: 30px 40px;
+    width: 100%;
     background-color: #0F4EB3;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
-/* Left footer */
 .footer-left {
-    flex: 1;
+    min-width: 200px;
 }
 
 .footer-title {
@@ -171,7 +170,6 @@
     line-height: 1.5;
 }
 
-/* Right footer */
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -188,11 +186,82 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
-    transition: all 0.3s ease;
     padding: 5px;
+    transition: 0.3s ease;
 }
 
 .footer-right-nav:hover {
     text-decoration: underline;
     transform: translateX(5px);
+}
+
+/* RESPONSIVE DESIGN */
+/* Smartphones */
+@media (max-width: 600px){
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding: 1.5px;
+        gap: 10px;
+    }
+    
+    .header-btn{
+        width: 100%;
+        height: 40px;
+    }
+
+    .middle{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .middle-num{
+        font-size: 40px;
+    }
+
+    .middle-title{
+        font-size: 30px;
+    }
+
+    .middle-desc{
+        font-size: 20px;
+    }
+
+    .right-img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .middle-reload-btnm .middle-home-btn{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-left, .footer-right{
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 900px){
+    .middle{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right{
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px){
+    /* Default Layout */
 }
