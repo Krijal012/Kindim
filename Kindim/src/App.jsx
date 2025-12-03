@@ -1,10 +1,10 @@
 import './App.css'
-import ErrorPage from './errorpage'
+import ErrorPage from './pages/errorpage'
 
 function App() {
-  return(
+  return (
     <ErrorPage />
-  )
+  );
 }
 
-export default App
+export default App;
