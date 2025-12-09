@@ -1,4 +1,4 @@
-function CategoryFilter() {
+function CategoryFilter({ setSelectCategory }) {
 
   const categories = [
     "Beauty Products",
@@ -18,7 +18,13 @@ function CategoryFilter() {
       <div className="space-y-2">
         {categories.map(cat => (
           <label key={cat} className="flex items-center gap-2">
-            <input type="radio" name="category" value={cat} defaultChecked={cat === "Beauty Products"} />
+            <input
+              type="radio"
+              name="category"
+              value={cat}
+              defaultChecked={cat === "Beauty Products"}
+              onChange={() => setSelectCategory(cat)}
+            />
             <span>{cat}</span>
           </label>
         ))}
@@ -31,7 +37,7 @@ function CategoryFilter() {
       {/* Rating */}
       <h3 className="font-medium text-lg mt-4 mb-2">Minimum Rating</h3>
       <div className="space-y-2">
-        {[5,4,3,2,1].map(r => (
+        {[5, 4, 3, 2, 1].map(r => (
           <label key={r} className="flex items-center gap-2">
             <input type="radio" name="rating" value={`${r}+`} />
             <span>{r}+ Stars</span>
