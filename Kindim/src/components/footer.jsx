@@ -1,12 +1,14 @@
-function Footer() {
+function Footer({ show }) {
   return (
     <>
       <div className="h-[40px]"></div>
 
       <footer
-        className="
+        className={`
           bg-[#1A73E8] text-white px-6 py-4 fixed bottom-0 left-0 w-full
-        "
+          transition-transform duration-300
+          ${show ? 'translate-y-0' : 'translate-y-full'}
+        `}
       >
         <div className="flex flex-col sm:flex-row justify-between gap-4">
           

@@ -1,14 +1,15 @@
 import KindimLogo from '../assets/Logo.png';
 
-function Header() {
+function Header({show}) {
   return (
-    <header className="
-      flex items-center gap-4 px-6 py-3 bg-[#1A73E8]
-      fixed top-0 left-0 w-full z-[9999]
-      
-      sm:px-8 sm:py-4
-      md:px-10
-    ">
+    <header className={`
+      flex items-center gap-4 px-6 py-3 bg-[#1A73E8] 
+      fixed top-0 left-0 w-full z-[9999] 
+      sm:px-8 sm:py-4 
+      md:px-10 
+      transition-transform duration-300 
+      ${show ? 'translate-y-0' : '-translate-y-full'}
+    `}>
       
       {/* Logo */}
       <img

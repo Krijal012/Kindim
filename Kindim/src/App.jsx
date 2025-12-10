@@ -1,10 +1,10 @@
 import './App.css'
-import CategorySection from './Pages/categorysection';
+import CategoryPage from './Pages/categorypage';
 import ErrorPage from './pages/errorpage'
 
 function App() {
   return (
-    <CategorySection />
+    <CategoryPage />
   );
 }
 
