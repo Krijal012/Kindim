@@ -1,5 +1,7 @@
-import SignupPage from "./pages/SignupPage";
+
+
+import Profile from "./pages/Profile";
 
 export default function App() {
-  return <SignupPage />;
+  return <Profile/>;
 }
