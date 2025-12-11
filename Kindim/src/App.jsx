@@ -1,10 +1,11 @@
 import './App.css'
-
-import ForgotPassword from './pages/ForgotPassword';
+import CategoryPage from './pages/categorypage';
+import ErrorPage from './errorpage';
+// import ErrorPage from './pages/errorpage';
 
 function App() {
   return (
-    <ForgotPassword />
+    <ErrorPage />
   );
 }
 

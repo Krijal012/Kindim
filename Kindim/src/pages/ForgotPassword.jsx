@@ -1,5 +1,5 @@
 import React from "react";
-import forgotImg from "./buy.jpg"; // correct path
+import forgotImg from "./buy.jpg"; 
 
 const ForgotPassword = () => {
   return (
