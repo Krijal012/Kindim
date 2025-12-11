@@ -10,7 +10,7 @@ export default function PasswordField({ placeholder }) {
       <input
         type={show ? "text" : "password"}
         placeholder={placeholder}
-        className="w-full px-[15px] py-[12px] pr-[40px] rounded-[6px] border border-[#ccc] bg-[#f0f0f0] text-[16px]"
+        className=" text-black w-full px-[15px] py-[12px] pr-[40px] rounded-[6px] border border-[#ccc] bg-[#f0f0f0] text-[16px]"
       />
       <img
         src={show ? eyeIcon : eyeOffIcon}

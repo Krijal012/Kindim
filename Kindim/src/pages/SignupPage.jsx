@@ -20,9 +20,10 @@ export default function SignupPage() {
           <PasswordField placeholder="Password" />
           <PasswordField placeholder="Confirm Password" />
 
-          <button className="w-full py-[12px] bg-[#0d47c2] text-white rounded-[30px] mt-[10px]">
+          <button className="w-full py-[12px] bg-[#0d47c2] text-white rounded-[30px] mt-[10px] hover:scale-105 transition duration-300">
             Sign up
           </button>
+          
         </div>
       </div>
 

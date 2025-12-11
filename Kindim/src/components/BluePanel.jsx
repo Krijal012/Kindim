@@ -2,7 +2,7 @@ import logoIcon from "../assets/icons/logo-icon.png";
 
 export default function BluePanel({ buttonText, bottomText }) {
   return (
-    <div className="w-1/2 flex flex-col justify-center items-center bg-gradient-to-b from-[#1A73E8] to-[#0F4EB3] rounded-tl-[70px] text-white p-[40px]">
+    <div className="w-1/2 flex flex-col justify-center items-center bg-gradient-to-b from-[#1A73E8] to-[#0F4EB3] rounded-tr-[70px] text-white p-[40px]">
       
       <img src={logoIcon} alt="Logo" className="w-[80px] h-[80px] mb-[20px]" />
 
@@ -13,7 +13,7 @@ export default function BluePanel({ buttonText, bottomText }) {
       <p className="text-[16px] mb-[30px] text-center">{bottomText}</p>
 
       <button
-        className="px-[30px] py-[10px] bg-black text-white rounded-[25px] hover:bg-gray-800 transition"
+        className="px-[30px] py-[10px] bg-black text-white rounded-[25px] hover:shadow-[0_0_20px_5px_rgba(0,0,0,0.8)] hover:scale-105 transition duration-300"
         onClick={() => console.log("Button clicked!")}
       >
         {buttonText}

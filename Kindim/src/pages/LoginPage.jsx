@@ -13,7 +13,7 @@ export default function LoginPage() {
         buttonText="Sign up"
       />
       <div className="w-1/2 flex flex-col justify-center px-[60px]">
-        <h1 className="text-[48px] font-bold mb-[30px] text-center">
+        <h1 className=" text-black text-[48px] font-bold mb-[30px] text-center">
           Login
         </h1>
 
@@ -21,11 +21,15 @@ export default function LoginPage() {
           <InputField placeholder="Username" icon={profileIcon} />
           <PasswordField placeholder="Password" />
 
-          <button className="w-full py-[12px] bg-[#0d47c2] text-white rounded-[30px] mb-[15px]">
-            Login
-          </button>
+<button className="w-full py-[12px] bg-[#0d47c2] text-white rounded-[30px] mb-[15px] 
+  hover:scale-105 
+  transition duration-300
+  hover:shadow-[0_0_15px_5px_rgba(59,130,246,0.7)]">
+  Login
+</button>
 
-          <div className="text-center text-blue-600 underline cursor-pointer">
+
+          <div className="no-underline hover:underline text-center text-blue-600 underline cursor-pointer">
             Forgot Password?
           </div>
         </div>
