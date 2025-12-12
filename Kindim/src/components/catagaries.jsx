@@ -1,5 +1,5 @@
-
-
+import Game from "../assets/icons/game.png";
+import Clothes from "../assets/icons/cloth.png";
 function Categories() {
   return (
     <div className="flex justify-center mt-10">
@@ -10,10 +10,10 @@ function Categories() {
         {/* Category Box */}
         {[ 
           { img: "/cat1.png", name: "Electronics" },
-          { img: "/cat2.png", name: "Fashion" },
+          { img: Clothes, name: "Fashion" },
           { img: "/cat3.png", name: "Groceries" },
           { img: "/cat4.png", name: "Mobiles" },
-          { img: "/cat5.png", name: "music" },
+          { img: Game, name: "game" },
     
           
         ].map((item, index) => (

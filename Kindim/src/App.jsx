@@ -1,8 +1,8 @@
-import Section from "./components/Section";
 import DashBoard from "./pages/DashBoard";
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
 
 export default function App() {
-  return <LoginPage />;
+  // To see other pages, you can swap <DashBoard /> with:
+  // import LoginPage from "./pages/LoginPage"; -> <LoginPage />
+  // import SignupPage from "./pages/SignupPage"; -> <SignupPage />
+  return <DashBoard />;
 }
