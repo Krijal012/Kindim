@@ -4,6 +4,7 @@ import ErrorPage from './pages/errorpage'
 
 function App() {
   return (
+    // <ErrorPage />
     <CategoryPage />
   );
 }

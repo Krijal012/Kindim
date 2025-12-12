@@ -1,6 +1,6 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import { Link } from "react-router-dom"; // Assuming you use react-router-dom
+
+import Footer from "../Components/Footer";
+import Header from "../Components/header";
 import Section from "../components/section";
 
 function ErrorPage() {
