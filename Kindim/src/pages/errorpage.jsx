@@ -6,9 +6,9 @@ import Section from "../components/section";
 function ErrorPage() {
   return (
     <>
-      <Header />
+      <Header show={true} />
       <Section />
-      <Footer />
+      <Footer show={true} />
     </>
   );
 }

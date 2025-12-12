@@ -1,6 +1,6 @@
 import './App.css'
 import CategoryPage from './Pages/categorypage';
-import ErrorPage from './pages/errorpage'
+import ErrorPage from './Pages/errorpage';
 
 function App() {
   return (

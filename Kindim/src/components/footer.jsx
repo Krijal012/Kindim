@@ -1,4 +1,4 @@
-function Footer({show}) {
+function Footer({show = true}) {
   return (
     <>
       <div className="h-[40px]"></div>

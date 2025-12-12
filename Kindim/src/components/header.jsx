@@ -1,6 +1,6 @@
 import KindimLogo from '../assets/Logo.png';
 
-function Header({ show }) {
+function Header({ show = true }) {
   return (
     <header
       className={`
