@@ -1,4 +1,5 @@
 import KindimErrorImg from '../assets/Errorpage.png';
+import Button from './Button'; // Assuming you create a Button component
 
 function Section() {
   return (
@@ -12,23 +13,23 @@ function Section() {
     >
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl text-[#0F1FCF]">404</h1>
-        <h3 className="text-3xl sm:text-4xl md:text-5xl font-thin mt-2">Page Not Found</h3>
+        <h1 className="text-5xl sm:text-7xl md:text-8xl text-[#0F1FCF]">404</h1>
+        <h3 className="text-2xl sm:text-4xl md:text-5xl font-thin mt-2">Page Not Found</h3>
 
-        <p className="text-lg sm:text-xl md:text-2xl my-4 leading-relaxed">
-          We couldn't find the page you were <br />
+        <p className="text-base sm:text-xl md:text-2xl my-4 leading-relaxed">
+          We couldn't find the page you were <br className="hidden sm:block" />
           looking for. It might have been <br />
           moved or deleted.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-          <button className="px-6 py-3 sm:px-8 sm:py-4 border-0 text-lg sm:text-xl rounded transition-all duration-500 ease hover:bg-black hover:text-white">
+          <Button variant="secondary" onClick={() => window.location.reload()}>
             Reload Page
-          </button>
+          </Button>
 
-          <button className="px-6 py-3 sm:px-8 sm:py-4 border-0 text-lg sm:text-xl bg-[#0F4EB3] text-white rounded transition-all duration-500 ease hover:bg-white hover:text-[#0F4EB3]">
+          <Button variant="primary" onClick={() => { /* navigate to homepage */ }}>
             Go to HomePage
-          </button>
+          </Button>
         </div>
       </div>
 
