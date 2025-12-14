@@ -1,11 +1,8 @@
-import "./App.css";
-import SellerDashboard from "./Components/sellerdashboard";
-// import AdminDashboard from "./Components/admindashboard";
-// import UserDashboard from "./Components/UserDashboard";
-// import SetNewPass from "./Pages/SetNewPass";
+import DashBoard from "./pages/DashBoard";
 
-function App() {
-  return <SellerDashboard/>;
+export default function App() {
+  // To see other pages, you can swap <DashBoard /> with:
+  // import LoginPage from "./pages/LoginPage"; -> <LoginPage />
+  // import SignupPage from "./pages/SignupPage"; -> <SignupPage />
+  return <DashBoard />;
 }
-
-export default App;

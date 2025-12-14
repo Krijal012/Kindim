@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Filters from "../Components/filters";
 import Footer from "../Components/footer";
 import Header from "../Components/header";
-import ProductGrid from "../Components/productgrid";
+import ProductGrid from "../Components/ProductGrid";
 import { ProductsData } from "../Data/productsdata";
 
 const CategoryPage = () => {
