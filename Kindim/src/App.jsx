@@ -1,12 +1,11 @@
-import './App.css'
-import CategoryPage from './Pages/categorypage';
-import ErrorPage from './Pages/errorpage';
+import "./App.css";
+import SellerDashboard from "./Components/sellerdashboard";
+// import AdminDashboard from "./Components/admindashboard";
+// import UserDashboard from "./Components/UserDashboard";
+// import SetNewPass from "./Pages/SetNewPass";
 
 function App() {
-  return (
-    // <ErrorPage />
-    <CategoryPage />
-  );
+  return <SellerDashboard/>;
 }
 
 export default App;
