@@ -3,7 +3,7 @@
 Kindim is a full-stack e-commerce platform inspired by Amazon & Daraz.
 The project starts with HTML/CSS/JS UI screens and progressively evolves into a modern full-stack application with:
 
-Frontend: HTML → CSS → JavaScript → React.js
+Frontend: HTML → CSS → Tailwind CSS -> JavaScript → React.js
 
 Backend: Node.js + Express
 
