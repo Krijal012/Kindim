@@ -33,10 +33,10 @@ useEffect(() => {
             // scrolling down
             setShowHeader(false);
             setShowFooter(true);
-        } else {
+        } else if (lastY.current - currentY > 10) {
             // scrolling up
             setShowHeader(true);
-            setShowFooter(true);
+            setShowFooter(false);
         }
 
         lastY.current = currentY;

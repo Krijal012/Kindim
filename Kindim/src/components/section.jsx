@@ -1,5 +1,4 @@
 import KindimErrorImg from '../assets/Errorpage.png';
-import Button from './Button'; // Assuming you create a Button component
 
 function Section() {
   return (
