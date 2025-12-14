@@ -1,15 +1,14 @@
-import KindimLogo from '../assets/Logo.png';
+import KindimLogo from '../assets/icons/logo-icon.png';
 
-function Header({show}) {
+function Header() {
   return (
-    <header className={`
-      flex items-center gap-4 px-6 py-3 bg-[#1A73E8] 
-      fixed top-0 left-0 w-full z-[9999] 
-      sm:px-8 sm:py-4 
-      md:px-10 
-      transition-transform duration-300 
-      ${show ? 'translate-y-0' : '-translate-y-full'}
-    `}>
+    <header className="
+      flex items-center gap-4 px-6 py-3 bg-[#1A73E8]
+      fixed top-0 left-0 w-full z-[9999]
+      
+      sm:px-8 sm:py-4
+      md:px-10
+    ">
       
       {/* Logo */}
       <img
@@ -26,8 +25,18 @@ function Header({show}) {
 
       {/* Title */}
       <span className="text-white font-bold text-xl sm:text-2xl md:text-3xl">
-        Kindim
+        Kindim Dashbord
       </span>
+
+      
+       <input 
+    type="text" 
+    placeholder="Search..." 
+    class=" w-[50%] ml-60 p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+     <button 
+    class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+  >Search</button>
 
       {/* Login Button */}
       <button className="

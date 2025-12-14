@@ -1,16 +1,16 @@
-// import Header from "../components/header";
-// import Footer from "../components/footer";
-// import { Link } from "react-router-dom"; // Assuming you use react-router-dom
-// import Section from "../components/section";
 
-// function ErrorPage() {
-//   return (
-//     <>
-//       <Header />
-//       <Section />
-//       <Footer />
-//     </>
-//   );
-// }
+import Footer from "../Components/footer";
+import Header from "../Components/header";
+import Section from "../Components/Section";
+
+function ErrorPage() {
+  return (
+    <>
+      <Header show={true} />
+      <Section />
+      <Footer show={true} />
+    </>
+  );
+}
 
 // export default ErrorPage;
