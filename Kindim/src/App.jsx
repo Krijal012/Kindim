@@ -1,7 +1,7 @@
 
+import Checkout from "./pages/Checkout";
 
-import Profile from "./pages/Profile";
 
 export default function App() {
-  return <Profile/>;
+  return <Checkout/>;
 }
