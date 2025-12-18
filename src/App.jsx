@@ -15,6 +15,7 @@ import CategoryPage from './pages/categorypage';
 // import Vase from './description/Vase';
 // import Indoorplant from './description/Indoorplant';
 // import Guitar from './description/Guitar';
+import Microphone from './description/Microphone';
 
 
 
