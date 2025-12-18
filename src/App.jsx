@@ -5,14 +5,15 @@ import './App.css'
 // import Sneaker from './description/Sneaker';
 // import Wallclock from './description/Wallclock';
 // import Headphone from './description/Headphone';
-// import CategoryPage from './pages/categorypage';
+import CategoryPage from './pages/categorypage';
 // import ErrorPage from './errorpage';
 // // import ErrorPage from './pages/errorpage';
 // import Facewash from './description/Facewash';
 // import Hat from './description/Hat';
-import Candles from './description/Candles';
-import Jeans from './description/Jeans';
-import Vase from './description/Vase';
+// import Candles from './description/Candles';
+// import Jeans from './description/Jeans';
+// import Vase from './description/Vase';
+// import Indoorplant from './description/Indoorplant';
 
 
 
@@ -21,7 +22,7 @@ import Vase from './description/Vase';
 function App() {
   return (
     <>
-    <Vase/>
+    <CategoryPage/>
  
     </>
   );
