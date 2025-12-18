@@ -1,6 +1,8 @@
 import './App.css'
 import Hoodie from './description/Hoodie';
-import Tshirt from './description/Tshirt';
+
+import Tshirt from './description/Tshirt';  
+import Sneaker from './description/Sneaker';
 // import CategoryPage from './pages/categorypage';
 // import ErrorPage from './errorpage';
 // // import ErrorPage from './pages/errorpage';
@@ -13,7 +15,7 @@ import Tshirt from './description/Tshirt';
 function App() {
   return (
     <>
-    <Hoodie/>
+    <Sneaker/>
  
     </>
   );
