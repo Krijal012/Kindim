@@ -15,8 +15,10 @@ import CategoryPage from './pages/categorypage';
 // import Vase from './description/Vase';
 // import Indoorplant from './description/Indoorplant';
 // import Guitar from './description/Guitar';
-import Microphone from './description/Microphone';
-import Dj from './description/Dj';
+// import Microphone from './description/Microphone';
+// import Dj from './description/Dj';
+// import Drumpad from './description/Drumpad';
+// import Flute from './description/Flute';
 
 
 
@@ -25,7 +27,7 @@ import Dj from './description/Dj';
 function App() {
   return (
     <>
-    <Dj/>
+    <CategoryPage/>
  
     </>
   );
