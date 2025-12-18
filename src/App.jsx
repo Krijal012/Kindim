@@ -3,6 +3,7 @@ import Hoodie from './description/Hoodie';
 
 import Tshirt from './description/Tshirt';  
 import Sneaker from './description/Sneaker';
+import Wallclock from './description/Wallclock';
 // import CategoryPage from './pages/categorypage';
 // import ErrorPage from './errorpage';
 // // import ErrorPage from './pages/errorpage';
@@ -15,7 +16,7 @@ import Sneaker from './description/Sneaker';
 function App() {
   return (
     <>
-    <Sneaker/>
+    <Wallclock/>
  
     </>
   );
