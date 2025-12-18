@@ -12,6 +12,8 @@ import './App.css'
 // import Hat from './description/Hat';
 import Candles from './description/Candles';
 import Jeans from './description/Jeans';
+import Vase from './description/Vase';
+
 
 
 
@@ -19,7 +21,7 @@ import Jeans from './description/Jeans';
 function App() {
   return (
     <>
-    <Jeans/>
+    <Vase/>
  
     </>
   );
