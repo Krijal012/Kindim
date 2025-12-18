@@ -22,7 +22,9 @@ import CategoryPage from './pages/categorypage';
 // import Piano from './description/Piano';
 // import Tv from './description/Tv';
 // import  Smartwatch from './description/Smartwatch';
-import  Speaker from './description/Speaker';
+// import  Speaker from './description/Speaker';
+// import  Ps5 from './description/Ps5';
+import
 
 
 
