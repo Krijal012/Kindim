@@ -19,6 +19,7 @@ import CategoryPage from './pages/categorypage';
 // import Dj from './description/Dj';
 // import Drumpad from './description/Drumpad';
 // import Flute from './description/Flute';
+// import Piano from './description/Piano';
 
 
 
