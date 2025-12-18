@@ -2,7 +2,7 @@ import { Minus, Plus, Trash2 } from 'lucide-react';
 
 export function CartItem({ item, onUpdateQuantity, onRemove }) {
   return (
-    <div className="bg-gray-50 rounded-lg p-4 flex items-center gap-4 mb-4">
+    <div className="bg-[#f2f2f2] rounded-lg p-4 flex items-center gap-4 mb-4">
       <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2">
         <img 
           src={item.image} 
