@@ -31,6 +31,8 @@ import CategoryPage from './pages/categorypage';
 // import Jacket from './description/Jacket';
 // import Faceclean from './description/faceclean';
 // import Denver from './description/Denver';
+// import Mamaearth from './description/Mamaearth';
+import Poshperfumes from './description/Poshperfumes';
 
 
 
