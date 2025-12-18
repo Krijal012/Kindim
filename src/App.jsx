@@ -14,6 +14,7 @@ import CategoryPage from './pages/categorypage';
 // import Jeans from './description/Jeans';
 // import Vase from './description/Vase';
 // import Indoorplant from './description/Indoorplant';
+// import Guitar from './description/Guitar';
 
 
 
