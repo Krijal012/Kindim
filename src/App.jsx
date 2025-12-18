@@ -20,7 +20,8 @@ import CategoryPage from './pages/categorypage';
 // import Drumpad from './description/Drumpad';
 // import Flute from './description/Flute';
 // import Piano from './description/Piano';
-import Tv from './description/Tv';
+// import Tv from './description/Tv';
+// import  Smartwatch from './description/Smartwatch';
 
 
 
