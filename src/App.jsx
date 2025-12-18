@@ -27,6 +27,7 @@ import CategoryPage from './pages/categorypage';
 // import Ukelele from './description/Ukelele';
 // import Laptop from './description/Laptop';
 // import Decorative from './description/Decorative';
+// import Tablelamp from './description/Tablelamp';
 
 
 
