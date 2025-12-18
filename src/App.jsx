@@ -11,6 +11,7 @@ import './App.css'
 // import Facewash from './description/Facewash';
 // import Hat from './description/Hat';
 import Candles from './description/Candles';
+import Jeans from './description/Jeans';
 
 
 
@@ -18,7 +19,7 @@ import Candles from './description/Candles';
 function App() {
   return (
     <>
-    <Candles/>
+    <Jeans/>
  
     </>
   );
