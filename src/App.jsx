@@ -1,4 +1,5 @@
 import './App.css'
+import Hoodie from './description/Hoodie';
 import Tshirt from './description/Tshirt';
 // import CategoryPage from './pages/categorypage';
 // import ErrorPage from './errorpage';
@@ -12,7 +13,7 @@ import Tshirt from './description/Tshirt';
 function App() {
   return (
     <>
-    <Tshirt/>
+    <Hoodie/>
  
     </>
   );
