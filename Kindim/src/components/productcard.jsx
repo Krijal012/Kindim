@@ -1,6 +1,7 @@
+
 function ProductCard({ product }) {
     return (
-        <div className="bg-white p-4 rounded-lg cursor-pointer shadow hover:shadow-lg transition">
+        <div className="w-[220px] bg-white p-4 rounded-lg cursor-pointer shadow hover:shadow-lg transition">
             <img
                 src={product.image}
                 alt={product.name}
