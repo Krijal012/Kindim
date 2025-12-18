@@ -24,8 +24,8 @@ import CategoryPage from './pages/categorypage';
 // import  Smartwatch from './description/Smartwatch';
 // import  Speaker from './description/Speaker';
 // import  Ps5 from './description/Ps5';
-import
-
+// import Ukelele from './description/Ukelele';
+import Laptop from './description/Laptop';
 
 
 
