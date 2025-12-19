@@ -32,7 +32,8 @@ import CategoryPage from './pages/categorypage';
 // import Faceclean from './description/faceclean';
 // import Denver from './description/Denver';
 // import Mamaearth from './description/Mamaearth';
-import Poshperfumes from './description/Poshperfumes';
+// import Poshperfumes from './description/Poshperfumes';
+import OrderHistorypage from './pages/Orderhistorypage';
 
 
 
@@ -40,7 +41,7 @@ import Poshperfumes from './description/Poshperfumes';
 function App() {
   return (
     <>
-    <CategoryPage/>
+    <OrderHistorypage/>
  
     </>
   );
