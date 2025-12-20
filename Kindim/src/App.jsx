@@ -6,7 +6,7 @@ import ErrorPage from './Pages/errorpage';
 function App() {
   return (
     // <ErrorPage />
-    <CategoryPage />
+    <CartPage />
   );
 }
 

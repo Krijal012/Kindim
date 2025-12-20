@@ -1,6 +1,6 @@
 export function OrderSummary({ subtotal, delivery, total }) {
     return(
-        <div className="bg-gray-300 p-6 rounded-lg">
+        <div className="bg-gray-300 p-4 sm:p-6 rounded-lg sticky top-28">
             <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
 
             <div className="mb-4">
