@@ -4,10 +4,8 @@ function Header({ show = true }) {
   return (
     <header
       className={`
-        flex items-center gap-4 px-6 py-3 bg-[#1A73E8]
+        flex items-center gap-3 sm:gap-4 px-4 py-2 sm:px-8 sm:py-4 md:px-10 bg-[#1A73E8]
         fixed top-0 left-0 w-full z-[9999]
-        sm:px-8 sm:py-4 
-        md:px-10
         transition-transform duration-300
         ${show ? "translate-y-0" : "-translate-y-full"}
       `}
@@ -15,10 +13,10 @@ function Header({ show = true }) {
       <img
         src={logoIcon}
         alt="logo"
-        className="h-12 w-12 sm:h-14 sm:w-14 md:h-20 md:w-20"
+        className="h-10 w-10 sm:h-14 sm:w-14 md:h-20 md:w-20 object-contain"
       />
 
-      <span className="text-white font-bold text-xl sm:text-2xl md:text-3xl">
+      <span className="text-white font-bold text-lg sm:text-2xl md:text-3xl">
         Kindim
       </span>
 
@@ -31,7 +29,7 @@ function Header({ show = true }) {
         />
       </form>
 
-      <button className='ml-auto bg-[#3d87ff] text-black font-semibold px-4 py-2 rounded-md shadow hover:bg-gray-100 active:scale-95 transition'>Logout</button>
+      <button className='ml-auto bg-[#3d87ff] text-black font-semibold text-sm sm:text-base px-3 py-1.5 sm:px-4 sm:py-2 rounded-md shadow hover:bg-gray-100 active:scale-95 transition'>Logout</button>
     </header>
   );
 }

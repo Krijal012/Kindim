@@ -1,7 +1,6 @@
-
-import Checkout from "./pages/Checkout";
+import ProductComparison from "./pages/ProductComparison";
 
 
 export default function App() {
-  return <Checkout/>;
+  return <ProductComparison/>;
 }
