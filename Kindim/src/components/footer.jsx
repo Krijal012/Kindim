@@ -1,13 +1,8 @@
-const footerLinks = [
-  { name: "Home", path: "/" },
-  { name: "Products", path: "/products" },
-  { name: "About Us", path: "/about" },
-  { name: "Contact", path: "/contact" },
-];
-
-function Footer({ show = true }) {
+function Footer({show = true}) {
   return (
     <>
+      <div className="h-[40px]"></div>
+
       <footer
         className={`
           bg-[#1A73E8] text-white px-4 py-3 sm:px-6 sm:py-4 fixed bottom-0 left-0 w-full z-50
@@ -26,16 +21,15 @@ function Footer({ show = true }) {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col gap-1 text-right sm:text-left min-w-fit">
-            <h3 className="hidden sm:block text-lg font-bold sm:text-xl mb-1">Quick Links</h3>
-            <div className="flex flex-wrap justify-end sm:justify-start gap-x-3 gap-y-1 sm:flex-col sm:gap-1">
-              {footerLinks.map((link) => (
+          <div className="flex flex-col gap-1">
+            <h3 className="text-lg font-bold sm:text-xl">Quick Links</h3>
+            {["Home", "Products", "About Us", "Contact"].map((link) => (
               <a
-                key={link.name}
-                href={link.path}
-                className="text-[10px] sm:text-sm hover:underline hover:text-gray-200 transition-colors"
+                key={link}
+                href="#"
+                className="text-xs sm:text-sm hover:underline"
               >
-                {link.name}
+                {link}
               </a>
             ))}
             </div>

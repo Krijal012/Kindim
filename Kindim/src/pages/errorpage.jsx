@@ -1,7 +1,7 @@
 
 import Footer from "../Components/footer";
 import Header from "../Components/header";
-import Section from "../components/section";
+import Section from "../Components/Section";
 
 function ErrorPage() {
   return (
@@ -13,4 +13,4 @@ function ErrorPage() {
   );
 }
 
-export default ErrorPage;
+// export default ErrorPage;

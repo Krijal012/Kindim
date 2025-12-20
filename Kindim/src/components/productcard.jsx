@@ -3,7 +3,7 @@ function ProductCard({ product }) {
     return (
         <div className="w-[220px] bg-white p-4 rounded-lg cursor-pointer shadow hover:shadow-lg transition">
             <img
-                src={product.image}
+                src={product.name}
                 alt={product.name}
                 className="w-full h-40 object-cover rounded"
             />
