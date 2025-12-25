@@ -1,32 +1,8 @@
-import { useState } from 'react';
 import img1 from "../assets/BeautyProducts/facewash.jpg"
 
-function Cart(){
-    // Dummy data for 5 products
-    const [cartItems, setCartItems] = useState([
-        { id: 1, name: "Facewash", price: 450, quantity: 1 },
-        { id: 2, name: "Sunscreen", price: 600, quantity: 2 },
-        { id: 3, name: "Moisturizer", price: 850, quantity: 1 },
-        { id: 4, name: "Serum", price: 1200, quantity: 1 },
-        { id: 5, name: "Toner", price: 350, quantity: 3 },
-    ]);
-
-    const updateQuantity = (id, change) => {
-        setCartItems(cartItems.map(item => {
-            if (item.id === id) {
-                const newQuantity = item.quantity + change;
-                return newQuantity > 0 ? { ...item, quantity: newQuantity } : item;
-            }
-            return item;
-        }));
-    };
-
-    const handleRemove = (id) => {
-        setCartItems(cartItems.filter(item => item.id !== id));
-    };
-
+function Cart({ cartItems, updateQuantity, handleRemove }){
     return(
-        <div className="space-y-4 w-40 h-40">
+        <div className="space-y-4">
             {cartItems.map((item) => (
                 <div key={item.id} className="flex items-center gap-4 bg-white p-4 rounded-lg border border-gray-200">
                     {/* Product Image */}

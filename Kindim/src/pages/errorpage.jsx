@@ -1,6 +1,7 @@
 import { Footer } from "../Components/footer";
 import { Header } from "../Components/header";
 import KindimErrorImg from "../assets/Errorpage.png"
+import Snowfall from "react-snowfall"
 
 function ErrorPage(){
     return(
@@ -35,6 +36,11 @@ function ErrorPage(){
                 />
             </section>
             <Footer />
+            <Snowfall
+            className="fixed inset-0 z-20 pointer-events-none"
+            color="#82C3D9"
+            snowflakeCount={120}
+            />
         </>
     )
 }

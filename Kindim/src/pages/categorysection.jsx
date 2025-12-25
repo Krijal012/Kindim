@@ -4,6 +4,7 @@ import { Footer } from "../Components/footer";
 import CategoryBar from "../components/categorybar";
 import ProductGrid from "../Components/productgrid";
 import products from "../data/products";
+import Snowfall from "react-snowfall"
 
 function CategorySection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -55,6 +56,11 @@ function CategorySection() {
 
       {/* Footer */}
       <Footer />
+      <Snowfall
+        className="fixed inset-0 z-20 pointer-events-none"
+        color="#82C3D9"
+        snowflakeCount={120}
+      />
     </>
   );
 }
