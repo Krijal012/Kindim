@@ -1,0 +1,35 @@
+import { Footer } from "../Components/footer";
+import { Header } from "../Components/header";
+import { OfferForm } from "../components/offerform";
+import { ProductInfo } from "../components/productinfo";
+import Snowfall from "react-snowfall";
+import img1 from "../assets/BeautyProducts/facewash.jpg";
+
+export function BargainPage(){
+    const handleSubmit = ({ proposedPrice }) => {
+        alert(`Offer submitted for Rs. ${proposedPrice}`);
+    };
+
+    return(
+        <>
+            <Header />
+            <main className="bg-gray-50 py-10 mt-20 min-h-screen">
+                <div className="max-w-2xl mx-auto px-6">
+                    <h1 className="text-3xl font-bold text-gray-900 mb-8">Make a Bargain</h1>
+                    <ProductInfo 
+                        productName="Facewash" 
+                        originalPrice={450} 
+                        productImage={img1} 
+                    />
+                    <OfferForm onSubmit={handleSubmit} />
+                </div>
+            </main>
+            <Footer />
+            <Snowfall
+                className="fixed inset-0 z-20 pointer-events-none"
+                color="#82C3D9"
+                snowflakeCount={120}
+            />
+        </>
+    );
+}
