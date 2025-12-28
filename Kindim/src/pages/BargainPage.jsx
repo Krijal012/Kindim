@@ -1,14 +1,13 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import { OfferForm } from "../components/OfferForm";
-import { ProductInfo } from "../components/ProductInfo";
-import products from "../data/Products";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
+import { OfferForm } from "../components/offerform";
+import { ProductInfo } from "../components/productinfo";
+import Snowfall from "react-snowfall";
+import img1 from "../assets/BeautyProducts/facewash.jpg";
 
-export function BargainPage({ product }){
-    const productToDisplay = product || products[0];
-
-    const handleSubmit = ({ proposedPrice, reason }) => {
-        alert(`Offer of Rs. ${proposedPrice} submitted for ${productToDisplay.name}. Reason: ${reason || 'N/A'}`);
+export function BargainPage(){
+    const handleSubmit = ({ proposedPrice }) => {
+        alert(`Offer submitted for Rs. ${proposedPrice}`);
     };
 
     return(
@@ -18,14 +17,19 @@ export function BargainPage({ product }){
                 <div className="max-w-2xl mx-auto px-6">
                     <h1 className="text-3xl font-bold text-gray-900 mb-8">Make a Bargain</h1>
                     <ProductInfo 
-                        productName={productToDisplay.name} 
-                        originalPrice={productToDisplay.price} 
-                        productImage={productToDisplay.image} 
+                        productName="Facewash" 
+                        originalPrice={450} 
+                        productImage={img1} 
                     />
                     <OfferForm onSubmit={handleSubmit} />
                 </div>
             </main>
             <Footer />
+            <Snowfall
+                className="fixed inset-0 z-20 pointer-events-none"
+                color="#82C3D9"
+                snowflakeCount={120}
+            />
         </>
     );
 }
