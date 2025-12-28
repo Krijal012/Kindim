@@ -1,9 +1,9 @@
 import './App.css'
-import CategorySection from './pages/CategorySection'
-import { ErrorPage } from './pages/ErrorPage'
+import { BargainPage } from './pages/BargainPage'
 
 export default function App() {
+
   return (
-    <CategorySection />
+    <BargainPage />
   )
 }
