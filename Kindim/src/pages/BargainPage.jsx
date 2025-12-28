@@ -2,7 +2,6 @@ import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import { OfferForm } from "../components/offerform";
 import { ProductInfo } from "../components/productinfo";
-import Snowfall from "react-snowfall";
 import img1 from "../assets/BeautyProducts/facewash.jpg";
 
 export function BargainPage(){
@@ -25,11 +24,7 @@ export function BargainPage(){
                 </div>
             </main>
             <Footer />
-            <Snowfall
-                className="fixed inset-0 z-20 pointer-events-none"
-                color="#82C3D9"
-                snowflakeCount={120}
-            />
+           
         </>
     );
 }
