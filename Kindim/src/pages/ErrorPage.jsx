@@ -1,6 +1,7 @@
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+
 import ErrorMiddle from "../components/errormiddle";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 
 export function ErrorPage() {
   return (

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Cart from "../components/Cart";
 import OrderSummary from "../components/OrderSummary";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+
 import products from "../data/Products";
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 
 export function CartPage(){
     const [cartItems, setCartItems] = useState([
