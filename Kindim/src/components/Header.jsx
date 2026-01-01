@@ -7,7 +7,7 @@ export function Header() {
         fixed top-0 left-0 w-full z-[9999]
         flex items-center gap-4
         bg-[#1A73E8]
-        px-6 py-3 sm:px-8 sm:py-4 md:px-10
+        px-4 py-3 sm:px-8 sm:py-4 md:px-10
         transition-transform duration-300
       `}
     >
@@ -24,7 +24,7 @@ export function Header() {
       </span>
 
       {/* Search */}
-      <form className="ml-10 flex flex-1 max-w-xl relative">
+      <form className="ml-10 hidden md:flex flex-1 max-w-xl relative">
         <i className="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
         <input
           type="text"
