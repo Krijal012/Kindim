@@ -2,12 +2,12 @@ function Cart({ cartItems, updateQuantity, handleRemove }){
     return(
         <div className="space-y-4">
             {cartItems.map((item) => (
-                <div key={item.id} className="flex items-center gap-4 bg-white p-4 rounded-lg border border-gray-200">
+                <div key={item.id} className="flex flex-col sm:flex-row items-center gap-4 bg-white p-4 rounded-lg border border-gray-200">
                     {/* Product Image */}
                     <img src={item.image} className="w-20 h-20 rounded-lg object-cover" alt={item.name} />
 
                     {/* Product Details */}
-                    <div className="flex-1">
+                    <div className="flex-1 w-full text-center sm:text-left">
                         <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
                         <p className="text-gray-600">Rs {item.price}</p>
                     </div>
