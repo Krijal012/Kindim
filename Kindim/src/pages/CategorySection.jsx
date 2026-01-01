@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 import CategoryBar from "../components/CategoryBar";
 import ProductGrid from "../components/ProductGrid";
 import products from "../data/Products";
@@ -36,7 +36,7 @@ function CategorySection() {
 
       {/* Main Content */}
       <main className="bg-gray-50 py-10 mt-20">
-        <div className="max-w-7xl mx-auto flex gap-8 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-6">
           
           {/* Left Filter Sidebar */}
           <CategoryBar 
