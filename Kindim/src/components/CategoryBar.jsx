@@ -17,7 +17,7 @@ function CategoryBar({
     };
 
     return(
-        <div className="w-64 bg-gray-50 p-6 border-r border-gray-200 min-h-screen">
+        <div className="w-full md:w-64 bg-gray-50 p-6 border-b md:border-b-0 md:border-r border-gray-200 md:min-h-screen">
             {/* Filters Header */}
             <h2 className="text-xl font-bold mb-6">Filters</h2>
 
