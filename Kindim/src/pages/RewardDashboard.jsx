@@ -39,3 +39,16 @@ export default function RewardDashboard() {
           />
         </div>
 
+        <div className="flex justify-center mt-2">
+          <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">
+            Spin Now
+          </button>
+        </div>
+
+        <p className="text-center font-semibold mt-4">
+          You got a real gun for free
+        </p>
+      </div>
+    </div>
+  );
+}
