@@ -31,3 +31,11 @@ export default function RewardDashboard() {
         </h3>
 
 
+        <div className="flex justify-center my-6">
+          <img
+            src={wheelImg}
+            alt="Spin Wheel"
+            className="w-44 h-44"
+          />
+        </div>
+
