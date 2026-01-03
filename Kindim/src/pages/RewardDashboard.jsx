@@ -11,4 +11,23 @@ export default function RewardDashboard() {
           Your Reward Dashboard
         </h2>
 
+        <div className="bg-gray-200 rounded-lg p-4 flex justify-between items-center">
+          <div>
+            <p className="text-sm">Your Gem Balance</p>
+            <p className="text-red-600 font-semibold">1000 Gems</p>
+            <p className="text-sm">
+              Equivalent to Rs 25.00 (50 Gems = Rs 1)
+            </p>
+          </div>
+
+          <button className="bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800">
+            Collect Gems
+          </button>
+        </div>
+
        
+        <h3 className="text-center font-semibold mt-6 mb-2">
+          Spin the Wheel Challenge
+        </h3>
+
+
