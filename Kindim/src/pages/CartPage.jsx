@@ -3,7 +3,7 @@ import Cart from "../components/Cart";
 import OrderSummary from "../components/OrderSummary";
 
 import products from "../data/Products";
-import { Header } from "../components/header";
+import { Header } from "../components/Header";
 import { Footer } from "../components/footer";
 
 export function CartPage(){

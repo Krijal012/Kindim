@@ -1,6 +1,6 @@
 import { Footer } from "../components/footer";
-import { Header } from "../components/header";
-import { OfferForm } from "../components/offerform";
+import { Header } from "../components/Header";
+import { OfferForm } from "../components/OfferForm";
 import { ProductInfo } from "../components/productinfo";
 import img1 from "../assets/BeautyProducts/facewash.jpg";
 
