@@ -68,7 +68,7 @@ export default function SellerDashboard() {
           
             <div className="lg:col-span-2 bg-white rounded shadow">
               <div className="p-4 border-b font-semibold">
-                Recent Sales
+                Recent Sale
               </div>
 
               <table className="w-full text-sm">

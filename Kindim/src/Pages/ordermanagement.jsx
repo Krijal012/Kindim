@@ -74,7 +74,7 @@ export default function OrderManagement() {
                 <p><strong>Amount:</strong> $120</p>
                 <p><strong>Status:</strong> Pending</p>
                 <button className="mt-2 w-full bg-blue-600 text-white py-2 rounded-md">
-                  View
+                  View Details
                 </button>
               </div>
             ))}

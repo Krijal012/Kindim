@@ -8,10 +8,6 @@ function AdminDashboard() {
       {/* HEADER */}
      <Header />
 
-        <button className="ml-auto bg-blue-800 px-3 py-1.5 md:px-4 md:py-2 rounded-md text-white text-sm md:text-base">
-          Logout
-        </button>
-
       {/* BODY */}
       <div className="flex pt-16 md:pt-20 pb-44">
 
