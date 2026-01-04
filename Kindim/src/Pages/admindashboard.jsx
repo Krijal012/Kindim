@@ -1,5 +1,5 @@
-import Header from '../Components/header';
-import Footer from '../Components/footer';
+import { Header } from '../Components/Header';
+import { Footer } from '../Components/Footer';
 import { Sidebar } from '../Components/sidebar';
 import { StatCard } from '../Components/statcard';
 

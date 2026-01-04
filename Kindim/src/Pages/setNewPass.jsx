@@ -1,8 +1,8 @@
 import AuthBox from "../Components/AuthBox";
 import Left from "../Components/left";
 import Right from "../Components/right";
-import Header from "../Components/header";
-import Footer from "../Components/footer";
+import { Header } from '../Components/Header';
+import { Footer } from '../Components/Footer';
 
 function SetNewPass() {
     return (

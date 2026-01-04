@@ -1,5 +1,5 @@
-import { Footer } from "../components/footer";
-import { Header } from "../components/Header";
+import { Footer } from '../Components/Footer';
+import { Header } from '../Components/Header';
 import { OrderCard } from "../components/OrderCard";
 import headphone from "../assets/Electronics/headphone.jpg";
 import shampoo from "../assets/BeautyProducts/shampoo.jpg";

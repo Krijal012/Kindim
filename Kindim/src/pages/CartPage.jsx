@@ -3,8 +3,8 @@ import Cart from "../components/Cart";
 import OrderSummary from "../components/OrderSummary";
 
 import products from "../data/Products";
-import { Header } from "../components/Header";
-import { Footer } from "../components/footer";
+import { Header } from '../Components/Header';
+import { Footer } from '../Components/Footer';
 
 export function CartPage(){
     const [cartItems, setCartItems] = useState([
